@@ -1,0 +1,213 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #222;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+/* Main */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Sections */
+section,
+article,
+aside {
+    background: white;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #0077cc;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Figure */
+figure {
+    text-align: center;
+    margin-top: 20px;
+}
+
+figure img {
+    max-width: 200px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 2px solid #0077cc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    color: #0077cc;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+/* Radio & Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+/* Button */
+button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Aside */
+aside {
+    border-left: 5px solid #0077cc;
+    background-color: #eef7ff;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+footer section {
+    background: transparent;
+    box-shadow: none;
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #00bfff;
+}
+
+footer hr {
+    margin: 20px 0;
+    border: 1px solid #555;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+    }
+}
