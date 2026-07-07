@@ -12,11 +12,17 @@ This repository contains my Full Stack internship practicals and learning progre
 ## Repository Structure
 ```
 Fullstack-Intern/
-│── README.md
-│── .gitignore
-│── .github/
+│
+├── .github/
 │   └── pull_request_template.md
-```
+│
+├── .gitignore
+├── README.md
+│
+└── week-01-html-foundations/
+    ├── index.html
+    ├── style.css
+        
 
 ## Branch Naming Convention
 Use the following format for every practical:
