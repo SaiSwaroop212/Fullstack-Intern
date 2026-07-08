@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 - HTML Foundations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>HTML Foundations</h1>
+        <p>Week 1 Assignment - Semantic HTML & Accessibility</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#article">Article</a></li>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home">
+            <h2>Welcome to HTML Foundations</h2>
+            <p>
+                Learn Semantic HTML, Accessibility, Forms,
+                ARIA attributes, and HTML5 best practices.
+            </p>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About This Assignment</h2>
+            <p>
+                This assignment demonstrates semantic HTML elements,
+                accessibility features, forms, and proper document structure.
+            </p>
+        </section>
+
+        <!-- Article -->
+        <article id="article">
+            <h2>Benefits of Semantic HTML</h2>
+            img src="semantic-tags.png"
+             alt="Semantic HTML Structure"
+             width="800"
+             height="500">
+
+
+            <p>
+                Semantic HTML makes webpages easier to understand for
+                browsers, search engines, and screen readers.
+            </p>
+
+            
+
+        </article>
+
+        <!-- Aside -->
+        <aside>
+            <h3>Quick Tip</h3>
+            <p>
+                Always use semantic HTML elements instead of unnecessary
+                &lt;div&gt; tags whenever possible.
+            </p>
+        </aside>
+
+        <!-- Registration Form -->
+        <section id="registration">
+
+            <h2>Student Registration Form</h2>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Student Details</legend>
+
+                    <label for="name">Full Name</label><br>
+                    <input type="text"
+                           id="name"
+                           placeholder="Enter your full name"
+                           required>
+
+                    <br><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="email"
+                           id="email"
+                           placeholder="Enter your email"
+                           required>
+
+                    <br><br>
+
+                    <label for="password">Password</label><br>
+                    <input type="password"
+                           id="password"
+                           required>
+
+                    <br><br>
+
+                    <label for="phone">Phone Number</label><br>
+                    <input type="tel"
+                           id="phone">
+
+                    <br><br>
+
+                    <label for="dob">Date of Birth</label><br>
+                    <input type="date"
+                           id="dob">
+
+                    <br><br>
+
+                    <label>Gender</label><br>
+
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+
+                    <br><br>
+
+                    <label>Skills</label><br>
+
+                    <input type="checkbox" id="html">
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox" id="css">
+                    <label for="css">CSS</label>
+
+                    <input type="checkbox" id="javascript">
+                    <label for="javascript">JavaScript</label>
+
+                    <br><br>
+
+                    <label for="department">Department</label>
+
+                    <select id="department">
+                        <option>CSE</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>IT</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="resume">Upload Resume</label>
+                    <input type="file" id="resume">
+
+                    <br><br>
+
+                    <label for="comments">Comments</label><br>
+
+                    <textarea id="comments"
+                              rows="5"
+                              cols="40"
+                              placeholder="Enter your comments"></textarea>
+
+                    <br><br>
+
+                    <button type="submit">Register</button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+
+            <h2>Contact Us</h2>
+
+            <p>Email : saiswaroopbijinapalli@gmail.com</p>
+
+            <p>Phone : +91 8919506900</p>
+
+            <p>Address : Bengaluru, Karnataka, India</p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <section>
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Contact Information</h3>
+
+            <p>Email : saiswaroopbijinapalli@gmail.com</p>
+            <p>Phone : +91 8919506900</p>
+        </section>
+
+        
+
+        <hr>
+
+        <p>&copy; 2026 HTML Foundations Assignment | Created by Sai Swaroop</p>
+
+    </footer>
+
+</body>
+</html>
