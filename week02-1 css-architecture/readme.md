@@ -22,7 +22,7 @@ This project demonstrates a responsive landing page built using **HTML5** and **
 
 - **Mobile:** Default layout (below 768px)
 - **Tablet:** 768px to 1023px
-- **Desktop:** 1024px and above
+- **laptop:** 1024px and above
 
 ## CSS Architecture
 
@@ -57,7 +57,7 @@ responsive-design-css-architecture/
 └── Screenshots
     ├── mobile.png
     ├── tablet.png
-    └── desktop.png
+    └── laptop.png
 ```
 
 ## Learning Outcomes
@@ -74,4 +74,4 @@ responsive-design-css-architecture/
 
 - Mobile View
 - Tablet View
-- Desktop View
+- laptop View
