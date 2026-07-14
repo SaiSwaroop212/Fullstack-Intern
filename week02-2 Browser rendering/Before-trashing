@@ -1,0 +1,13 @@
+function badLayout(){
+
+const box=document.getElementById("box");
+
+for(let i=0;i<5000;i++){
+
+box.style.width=(100+i)+"px";
+
+box.offsetHeight;
+
+}
+
+}

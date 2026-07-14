@@ -1,0 +1,15 @@
+function goodLayout(){
+
+const box=document.getElementById("box");
+
+let width=100;
+
+for(let i=0;i<5000;i++){
+
+width++;
+
+}
+
+box.style.width=width+"px";
+
+}
