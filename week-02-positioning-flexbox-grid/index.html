@@ -1,5 +1,124 @@
-<a href="float.html">Float Layout</a><br><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 02 Assignments</title>
 
-<a href="flexbox.html">Flexbox Layout</a><br><br>
+    <style>
 
-<a href="grid/grid.html">Grid Layout</a>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            padding:40px;
+        }
+
+        h1{
+            text-align:center;
+            color:#2c3e50;
+            margin-bottom:40px;
+        }
+
+        .container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 5px 12px rgba(0,0,0,.2);
+            text-align:center;
+        }
+
+        .card h2{
+            color:#2c3e50;
+            margin-bottom:15px;
+        }
+
+        .card p{
+            margin-bottom:20px;
+            color:#555;
+        }
+
+        .card a{
+            display:block;
+            margin:10px 0;
+            padding:12px;
+            background:#3498db;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        .card a:hover{
+            background:#2c3e50;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>Week 02 Assignments</h1>
+
+<div class="container">
+
+    <!-- Positioning / Flexbox / Grid -->
+
+    <div class="card">
+
+        <h2>Positioning, Flexbox & Grid</h2>
+
+        <p>Comparison of Float, Flexbox and Grid layouts.</p>
+
+        <a href="../week02/layout-comparison/index.html">
+            Open Layout Comparison
+        </a>
+
+    </div>
+
+    <!-- Responsive Design -->
+
+    <div class="card">
+
+        <h2>Responsive Design & CSS Architecture</h2>
+
+        <p>Responsive landing page using BEM and media queries.</p>
+
+        <a href="../week02-1 css-architecture/index.html">
+            Open Responsive Landing Page
+        </a>
+
+        <a href="../week02-1 css-architecture/home.html">
+            View Screenshots
+        </a>
+
+    </div>
+
+    <!-- Browser Rendering -->
+
+    <div class="card">
+
+        <h2>Browser Fundamentals</h2>
+
+        <p>Rendering pipeline and layout thrashing demo.</p>
+
+        <a href="../week02-2 Browser rendering/Layout-trashing/index.html">
+            Open Browser Rendering Demo
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
