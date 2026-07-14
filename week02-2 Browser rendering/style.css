@@ -1,0 +1,19 @@
+body{
+
+font-family:Arial;
+
+text-align:center;
+
+}
+
+#box{
+
+width:100px;
+
+height:100px;
+
+background:dodgerblue;
+
+margin:40px auto;
+
+}
