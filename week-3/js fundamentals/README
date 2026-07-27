@@ -1,0 +1,251 @@
+# Week 3 - JavaScript Fundamentals
+
+## Overview
+
+This project demonstrates core JavaScript concepts including execution context, scope, closures, variable declarations, `this` binding, and custom implementations of `call`, `apply`, and `bind`.
+
+---
+
+## Files Included
+
+### 1. call.js
+Implemented a custom version of `Function.prototype.call()`.
+
+**Purpose:**
+- Invokes a function with a specified `this` value.
+- Accepts arguments individually.
+
+---
+
+### 2. apply.js
+Implemented a custom version of `Function.prototype.apply()`.
+
+**Purpose:**
+- Invokes a function with a specified `this` value.
+- Accepts arguments as an array.
+
+---
+
+### 3. bind.js
+Implemented a custom version of `Function.prototype.bind()`.
+
+**Purpose:**
+- Returns a new function with a permanently bound `this` value.
+
+---
+
+### 4. closure-counter.js
+
+Implemented a closure-based counter.
+
+**Concepts Used**
+- Closures
+- Private variables
+- Lexical scope
+
+The counter keeps the `count` variable private while allowing controlled access through public methods.
+
+---
+
+### 5. module-pattern.js
+
+Implemented the Module Pattern using closures.
+
+**Concepts Used**
+- Closures
+- Encapsulation
+- Private state
+- Public methods
+
+The module exposes only the required methods while hiding internal variables.
+
+---
+
+### 6. var-let-examples.js
+
+Demonstrates the differences between `var` and `let`.
+
+Examples include:
+- Loop scoping
+- Block scope
+- Variable redeclaration
+
+---
+
+# JavaScript Concepts
+
+## Variables
+
+### var
+- Function scoped
+- Can be redeclared
+- Can be reassigned
+- Hoisted and initialized with `undefined`
+
+### let
+- Block scoped
+- Cannot be redeclared in the same scope
+- Can be reassigned
+- Hoisted but remains in the Temporal Dead Zone until initialized
+
+### const
+- Block scoped
+- Cannot be redeclared
+- Cannot be reassigned
+- Must be initialized during declaration
+
+---
+
+## Hoisting
+
+Hoisting is JavaScript's behavior of moving variable and function declarations to the top of their scope before execution.
+
+Example:
+
+```javascript
+console.log(a);
+var a = 10;
+```
+
+Output:
+
+```
+undefined
+```
+
+---
+
+## Lexical Scope
+
+Lexical scope means that a function can access variables from the scope in which it was defined.
+
+Example:
+
+```javascript
+function outer() {
+    let name = "Sai";
+
+    function inner() {
+        console.log(name);
+    }
+
+    inner();
+}
+```
+
+---
+
+## Closures
+
+A closure is created when an inner function remembers variables from its outer function even after the outer function has finished executing.
+
+Closures are useful for:
+- Data privacy
+- Counters
+- Module pattern
+- Maintaining state
+
+---
+
+## Execution Context
+
+JavaScript creates an execution context whenever code runs.
+
+Types:
+- Global Execution Context
+- Function Execution Context
+
+Each execution context consists of:
+- Memory Creation Phase
+- Execution Phase
+
+---
+
+## Call Stack
+
+The Call Stack manages function execution using the Last In, First Out (LIFO) principle.
+
+Example:
+
+```
+main()
+↓
+
+one()
+↓
+
+two()
+
+↓
+
+Return
+
+↓
+
+Return
+```
+
+---
+
+## this Binding
+
+JavaScript determines the value of `this` in four ways:
+
+### Implicit Binding
+
+```javascript
+obj.show();
+```
+
+`this` refers to `obj`.
+
+---
+
+### Explicit Binding
+
+Using:
+- call()
+- apply()
+- bind()
+
+These methods explicitly set the value of `this`.
+
+---
+
+### New Binding
+
+```javascript
+new Person();
+```
+
+`this` refers to the newly created object.
+
+---
+
+### Arrow Function
+
+Arrow functions do not have their own `this`.
+
+They inherit `this` from the surrounding lexical scope.
+
+---
+
+# DRY Principle
+
+DRY stands for **Don't Repeat Yourself**.
+
+Avoid duplicating code by creating reusable functions.
+
+---
+
+# KISS Principle
+
+KISS stands for **Keep It Simple, Stupid**.
+
+Write code that is simple, readable, and easy to maintain.
+
+---
+
+# Conclusion
+
+This assignment helped me understand JavaScript fundamentals such as execution context, closures, scope, `this` binding, and function methods like `call`, `apply`, and `bind`. It also improved my understanding of writing reusable and maintainable JavaScript code.
